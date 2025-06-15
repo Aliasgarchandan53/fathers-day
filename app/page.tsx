@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Heart, Gift, Camera, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Heart, Gift, Camera, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
   return (
@@ -40,7 +40,7 @@ export default function HomePage() {
         <h1 className="text-6xl md:text-8xl font-bold text-orange-900 mb-6 leading-tight">
           Happy
           <br />
-          <span className="text-red-600">Father's Day</span>
+          <span className="text-red-600">Father&apos;s Day</span>
         </h1>
 
         <p className="text-2xl md:text-3xl text-orange-800 mb-8 max-w-3xl leading-relaxed">
@@ -91,5 +91,5 @@ export default function HomePage() {
         </div>
       </div>
     </div>
-  )
+  );
 }

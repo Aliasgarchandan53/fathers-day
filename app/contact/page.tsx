@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { ArrowLeft, MessageCircle, Mail, Linkedin, Phone, Heart } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Link from "next/link";
+import { ArrowLeft, MessageCircle, Mail, Linkedin, Phone, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ContactPage() {
   return (
@@ -19,7 +19,7 @@ export default function ContactPage() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <Heart className="w-12 h-12 text-red-500 mx-auto mb-4" />
-          <h1 className="text-4xl md:text-5xl font-bold text-orange-900 mb-2">Let's Stay Connected</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-orange-900 mb-2">Let&apos;s Stay Connected</h1>
           <p className="text-orange-700 text-lg">
             Dad, reach out to me anytime you want to chat, share a story, or just say hello!
           </p>
@@ -37,7 +37,7 @@ export default function ContactPage() {
             <CardContent className="text-center">
               <p className="text-gray-600 mb-4">Send me a quick message or give me a call anytime!</p>
               <Button asChild className="bg-green-500 hover:bg-green-600 text-white w-full">
-                <Link href="https://wa.me/+917297000253" target="_blank">
+                <Link href="https://wa.me/+917297000253" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Chat on WhatsApp
                 </Link>
@@ -75,9 +75,9 @@ export default function ContactPage() {
               <CardTitle className="text-2xl text-blue-800">LinkedIn</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-gray-600 mb-4">Connect with me professionally and see what I'm up to!</p>
+              <p className="text-gray-600 mb-4">Connect with me professionally and see what I&apos;m up to!</p>
               <Button asChild variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 w-full">
-                <Link href="https://linkedin.com/in/ali-asgar-chandan-9806861b5" target="_blank">
+                <Link href="https://linkedin.com/in/ali-asgar-chandan-9806861b5" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4 mr-2" />
                   Connect on LinkedIn
                 </Link>
@@ -109,12 +109,11 @@ export default function ContactPage() {
 
         <div className="text-center mt-12 p-8 bg-white/60 backdrop-blur-sm rounded-lg border border-orange-200">
           <h3 className="text-2xl font-bold text-orange-900 mb-4">Dad, you mean the world to me! 💝</h3>
-          <p className="text-orange-700 text-lg leading-relaxed">
-            Whether you want to share a funny story, need help with something, or just want to chat about your day, I'm
-            always here for you. Don't hesitate to reach out through any of these channels - I love hearing from you!
+          <p className="text-orange-800 max-w-xl mx-auto leading-relaxed">
+            Your love, support, and wisdom have shaped me into who I am today. I&apos;m grateful every day to have you as my father.
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
